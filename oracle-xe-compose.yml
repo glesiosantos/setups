@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  oracle-server:
+    container_name: oracle-server
+    image: gvenzl/oracle-xe:latest
+    ports:
+      - "1521:1521"
+    environment:  
+      ORACLE_PASSWORD: '102030'
